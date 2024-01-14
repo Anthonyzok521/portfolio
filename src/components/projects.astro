@@ -1,0 +1,15 @@
+---
+interface Props{
+    name?: string,
+    imageUrl?: string
+}
+
+const {name, imageUrl} = Astro.props
+---
+
+<div class="folder">
+    <div class="image">
+        <img src=`${imageUrl}` alt=`${name}`>
+    </div>
+    <h3>${name}</h3>
+</div>
