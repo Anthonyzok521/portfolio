@@ -1,0 +1,52 @@
+---
+import Head from "../components/head.astro";
+import Footer from "../components/footer.astro";
+import Aside from "../components/aside.astro";
+import About from "../components/about.astro";
+import Projects from "../components/projects.astro";
+import Contact from "../components/contact.astro";
+import Boxs from "../components/boxs.astro";
+let title = "Anthony Carrillo";
+---
+<Head title={title}/>
+<main>
+	<section class="home">
+		<div class="animated zoomIn">
+			<h1 class="title"><span class="letter-B">B</span>ienvenido</h1>
+		</div>
+		<div >
+			<button id="btn-open">¡Click Aquí!</button>
+		</div>
+	</section>
+	<section class="panel">
+		<header class="no-animH normal-height">
+			<button id="btn-close"><i class="fi fi-sr-arrow-small-left"></i></button>
+			<div class="container">		
+			<div class="container-box">
+				<Boxs/>		
+				<div class="container-perfil">					
+					<img src="/images/perfil.png" alt="Mi foto de perfil" class="perfil"/>
+					<h3 class="title-perfil"><span>{title}</span></h3>
+				</div>
+				</div>
+			</div>
+			
+		</header>
+		
+		<div class="container-body">
+			<div class="container-content">
+				<Aside/>
+				<About/>	
+				<About/>			
+				<About/>
+				<!-- <div class="container-projects">
+					<Projects name="Robot Maze" imageUrl="https://itch.io/embed/638933"/>
+				</div> -->
+				<Contact/>
+			</div>	
+		</div>
+															
+	</section>
+
+</main>
+<Footer/>
