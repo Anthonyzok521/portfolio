@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # portfolio
 =======
 # Portfolio - Anthony Carrillo
@@ -14,4 +13,3 @@ echo 'Hi there!👋'
 ##
 
 ### Since 2020
->>>>>>> master
