@@ -1,7 +1,7 @@
 import { cn } from "./ui/utils.ts";
 import { Lucide, Simple } from "./icons";
 import { Octokit } from "octokit";
-import { config } from 'dotenv'
+import { config } from 'dotenv';
 
 config()
 
@@ -26,7 +26,7 @@ export default () => {
   return (
     <div className="flex items-center justify-center p-4 md:p-5 xl:p-6 w-full h-80 overflow-auto">
       <ul className="grid grid-cols-1 gap-3 w-full h-full">
-        {repos.data.map((project) => {
+        {repos.data.map((project: { name: string; description: string, html_url: string}) => {
           return (
             <li key={project.name} className="flex items-center">
               <a
