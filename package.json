@@ -1,15 +1,15 @@
 {
-  "name": "astrovehnt",
+  "name": "ac-portfolio-dev",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": {
-    "name": "flamrdevs",
-    "url": "https://github.com/flamrdevs"
+    "name": "anthonyzok521",
+    "url": "https://github.com/Anthonyzok521"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/flamrdevs/astrovehnt.git"
+    "url": "https://github.com/Anthonyzok521/portfolio.git"
   },
   "scripts": {
     "dev": "astro dev",
