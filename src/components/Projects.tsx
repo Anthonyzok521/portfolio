@@ -1,22 +1,8 @@
 import { cn } from "./ui/utils.ts";
 import { Lucide, Simple } from "./icons";
-import { Octokit } from "octokit";
-import { config } from 'dotenv';
+import { Repo } from "./api";
 
-config()
-
-// Octokit.js
-// https://github.com/octokit/core.js#readme
-const octokit = new Octokit({
-  auth: process.env.TOKEN_GIT
-});
-
-const repos = await octokit.request('/users/{username}/repos', {
-  username: 'Anthonyzok521',
-  headers: {
-    'X-GitHub-Api-Version': '2022-11-28'
-  }
-});
+const repos = Repo.repository;
 
 const projects = {
   icon: Simple.IconGitRepository || Lucide.IconImage,
