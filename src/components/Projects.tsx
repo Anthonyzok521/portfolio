@@ -10,8 +10,8 @@ const projects = {
 
 export default () => {
   return (
-    <div className="flex items-center justify-center p-4 md:p-5 xl:p-6 w-full h-80 overflow-auto">
-      <ul className="grid grid-cols-1 gap-3 w-full h-full">
+    <div className="col-span-4 row-span-1 p-4 md:p-5 xl:p-6 w-full h-80 md:h-full overflow-auto">
+      <ul className="grid grid-cols-1 gap-3 w-full h-max">
         {repos.data.map((project: { name: string; description: string, html_url: string}) => {
           return (
             <li key={project.name} className="flex items-center">
@@ -26,7 +26,7 @@ export default () => {
                 )}
                 target="_blank"
                 aria-label="Open">
-                  
+
                 <div className="flex flex-row items-stretch gap-5 pl-2">
                   <div className="flex items-center justify-center">
                     <projects.icon

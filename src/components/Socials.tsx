@@ -8,12 +8,12 @@ const socials = [
     icon: Simple.IconGitHub,
   },
   {
-    href: "https://x.com/AC_GAMES_",
+    href: "https://x.com/advc_community",
     name: "X",
     icon: Simple.IconX,
   },
   {
-    href: "https://www.youtube.com/@acgames-dev",
+    href: "https://www.youtube.com/@advancedcommunity",
     name: "Youtube",
     icon: Simple.IconYoutube,
   },

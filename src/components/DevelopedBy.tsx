@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useTrail, animated } from "@react-spring/web";
 
-const text = "AC GAMES".split("");
+const text = "Advanced Community".split("");
 
 export default () => {
   const [state, setState] = useState(true);
@@ -49,7 +49,7 @@ export default () => {
 
   return (
     <div className="relative flex items-center justify-center p-1 w-full h-full">
-      <div className="flex items-center gap-2 font-mono font-medium text-2xl lg:text-3xl select-none">
+      <div className="flex items-center gap-2 font-mono font-medium text-xl md:text-3xl select-none">
         {opacity.map((props, i) => (
           <animated.span key={i} style={props}>
             <animated.span style={color[i]}>{text[i]}</animated.span>
@@ -60,7 +60,7 @@ export default () => {
       <div className="absolute inset-x-0 bottom-1 mb-8 font-mono text-neutral-10 text-xs text-center">
         <span>
           {" "}
-          <a
+          <a rel="noopener"
             href="https://acgames-developer.itch.io"
             className="inline-block transition duration-300 hover:-translate-y-px outline-none hover:text-primary-10 focus-visible:text-primary-10"
             target="_blank"
